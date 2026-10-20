@@ -1,0 +1,38 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Credentials and workstation settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.idea/
+.vscode/
+
+# Organizer observations, generated row-level tables and retraining output
+data/
+Data/
+datasets/
+artifacts/
+work/
+*.parquet
+*.csv
+*.feather
+*.pkl
+*.pickle
+*.npz
+*.npy
+*.log
+*.zip
+
+# Frozen submission/model/*.txt files are intentionally versioned.

@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-20",
+  "purpose": "Sanitized aggregate research history for public repository",
+  "selected_artifact": {
+    "version": "v10",
+    "sha256": "85e10d7462d027ff760c09a49ad26df460fcebcf836e97e271769287eb34a432",
+    "bytes": 5213247,
+    "scope": "final local selection and delivery only",
+    "platform_last_submission_identity_verified": false
+  },
+  "private_leaderboard_observation": {
+    "provenance": "user_provided_screenshot",
+    "displayed_rank": 13,
+    "rankic": 0.0721,
+    "information_ratio": 3.5702,
+    "score": 0.6999,
+    "platform_capture_time": null,
+    "associated_version": null,
+    "associated_artifact_sha256": null,
+    "last_submission_id": null,
+    "manual_reproduction_review_verified": false,
+    "is_per_version_result": false,
+    "limitation": "Screenshot row only;last uploaded artifact identity unknown;not evidence for assigning private metrics to any version.",
+    "manual_review_status": "not_verified_from_available_evidence"
+  },
+  "versions": [
+    {
+      "version": "v2",
+      "method": "Two shallow LightGBM models; within-day rank target derived from raw-H1; equal percentile averaging",
+      "artifact_sha256": "4e794d4dec55b7448ef0369f40ad638dd6edd1839880e10bdc431577fc535da6",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": true,
+      "public_metrics": null,
+      "public_attribution": "ambiguous_early_v1_v2",
+      "private_metrics": null,
+      "notes": [
+        "Early same-name submissions have unresolved v1/v2 artifact attribution."
+      ]
+    },
+    {
+      "version": "v3",
+      "method": "One ranked-H1 LightGBM with structured price-volume features",
+      "artifact_sha256": "e85a22d522fe95b57d59cbc585bbdd6fe10f5c91c21d17def6fb9be31d826731",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": true,
+      "public_metrics": {
+        "rankic": 0.0434,
+        "information_ratio": 1.2747
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Historical ST-derived feature present."
+      ]
+    },
+    {
+      "version": "v4",
+      "method": "Three-seed compact ranked-H1 LightGBM ensemble",
+      "artifact_sha256": "f6a7796f45034263903d725346d65483c57f71479afe8a2fbb33e707642a86d5",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": true,
+      "public_metrics": {
+        "rankic": 0.0442,
+        "information_ratio": 2.8373
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Historical ST-derived feature present.",
+        "Local improvements were not uniform across years."
+      ]
+    },
+    {
+      "version": "v5",
+      "method": "75%tree+25%two-seed Mamba-style selective state-space network",
+      "artifact_sha256": "057658d165ae0e0ba007b182814fb828e319bafa2e3fbc0ff588d33df5046ba0",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": false,
+      "public_metrics": {
+        "rankic": 0.0518,
+        "information_ratio": 1.4537
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Pre-correction historical-membership-scope results invalidated and refitted.",
+        "Turnover veto was changed after observing outcomes;exploratory policy change,not original-all-gates pass.",
+        "Public IR below v4."
+      ]
+    },
+    {
+      "version": "v6",
+      "method": "Equal compact/deeper LightGBM capacity-family ensemble",
+      "artifact_sha256": "ad17e30f3643b850e4540be4c1e0091bd81e56ce2f274630961b0ec40e105cca",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": true,
+      "public_metrics": {
+        "rankic": 0.0461,
+        "information_ratio": 3.3296
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Historical ST-derived feature present;not recommended under final deployment contract."
+      ]
+    },
+    {
+      "version": "v7",
+      "method": "80%tree+20%two-seed MLP",
+      "artifact_sha256": "b3c6010b478abb05c593f26c774292984748965d552f68ff1e5c42e9ff7e198b",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": true,
+      "public_metrics": {
+        "rankic": 0.049,
+        "information_ratio": 1.9403
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Historical ST-derived feature present.",
+        "Local improvement did not transfer to public IR."
+      ]
+    },
+    {
+      "version": "v7r2",
+      "method": "Shared cleaning and bounded four-date NN-score smoothing",
+      "artifact_sha256": "a8cff90bb79f3d5c28a942b343d94ccc01958a4e9c22cd2cbe96e1c4e5c4dcc8",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": true,
+      "public_metrics": {
+        "rankic": 0.0485,
+        "information_ratio": 0.5444
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Original gates failed;post-observation authorized exploratory relaxation.",
+        "Public IR below v7."
+      ]
+    },
+    {
+      "version": "v8",
+      "method": "Three-seed LightGBM Extra Trees mode with230features",
+      "artifact_sha256": "b79f69355149f6e2ecc11c55b99fa7c96e721392edd566ba40f839b43ce376a4",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": true,
+      "public_metrics": {
+        "rankic": 0.0819,
+        "information_ratio": 2.8033
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "230features include historical ST dependence;superseded byST-free v9."
+      ]
+    },
+    {
+      "version": "v9",
+      "method": "ST-free229features;three ranked-H1 and three utility Boosters;fixed75/25fusion",
+      "artifact_sha256": "379482d48218772de1336f8a0934502d12de8a0c1af6e69909f452f30cc4d0fa",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": false,
+      "public_metrics": {
+        "rankic": 0.0815,
+        "information_ratio": 3.7311
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Not every development year improved."
+      ]
+    },
+    {
+      "version": "v10",
+      "method": "Same six v9weight files;fixed seed-disagreement penalty and reranking",
+      "artifact_sha256": "85e10d7462d027ff760c09a49ad26df460fcebcf836e97e271769287eb34a432",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": false,
+      "public_metrics": {
+        "rankic": 0.0817,
+        "information_ratio": 4.6406
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Final local selection;not confirmed as last platform upload.",
+        "Some annual comparisons and uncertainty checks did not establish uniform improvement."
+      ]
+    },
+    {
+      "version": "v11",
+      "method": "Risk-exposure-residual ranked-H1 branch;utility branch retained",
+      "artifact_sha256": "94aafe8db26337da6695bed5d76520c34421704244e3f24b3738ab2c2033997c",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": false,
+      "public_metrics": {
+        "rankic": 0.0712,
+        "information_ratio": 1.5609
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Public RankIC and IR below v10.",
+        "Later known-year2022diagnostic cannot establish hidden-period causality."
+      ]
+    },
+    {
+      "version": "v12",
+      "method": "Nine-Boosters raw-rank/residual-rank/utility fixed fusion",
+      "artifact_sha256": "a0c80dd786e50d2fcabb1491376db4038b9028e7a7d0c202e96ef922ae5b03b2",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": false,
+      "public_metrics": {
+        "rankic": 0.0803,
+        "information_ratio": 3.1666
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Original2022zero-top50 and cost-top50 gates failed.",
+        "Exploratory release,not original-all-gates winner."
+      ]
+    },
+    {
+      "version": "v13",
+      "method": "Fixed Blom normal-score aggregation",
+      "artifact_sha256": "cc559cd9b1b7da64f63a35d77343f3fa9421d541cfb091bc6ac574fab92a10a9",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": false,
+      "public_metrics": null,
+      "public_attribution": "not_available",
+      "private_metrics": null,
+      "notes": [
+        "Original development positive-years/mean-IR and2022cost-Barra/zero-top50/cost-top50 checks failed.",
+        "Post-development fallback does not count as original-gate success.",
+        "No verified public metrics available."
+      ]
+    },
+    {
+      "version": "v14",
+      "method": "Same six v10weights+20%plain dual-head MLP with CPU NumPy inference",
+      "artifact_sha256": "8e7984c8b233b7ef23b406765bd489fb33e9a8c08f0a8082b743e5e234d0362b",
+      "archived_zip_integrity_checked": true,
+      "historical_st_dependency": false,
+      "public_metrics": {
+        "rankic": 0.0799,
+        "information_ratio": 1.9329
+      },
+      "public_attribution": "archived_user_screenshot_version_association",
+      "private_metrics": null,
+      "notes": [
+        "Plain originated as an ineligible control;separate exploratory follow-up after observed development results.",
+        "Later local gates/deployment success do not erase adaptive selection.",
+        "Public RankIC and IR below v10."
+      ]
+    }
+  ],
+  "early_public_observation": {
+    "attribution": "unresolved_early_same_filename_v1_v2",
+    "rankic": 0.0267,
+    "information_ratio": -0.6639,
+    "associated_artifact_sha256": null
+  },
+  "public_metrics_context": {
+    "source": "archived common user screenshot recorded2026-10-13",
+    "rankic_is_daily_spearman_metric": true,
+    "public_is_not_private": true,
+    "score_in_version_table_omitted": true,
+    "score_is_cohort_normalized_and_time_dependent": true,
+    "hidden_dates_unknown": true,
+    "public_coefficient_search_performed": false
+  },
+  "local_evaluation": {
+    "years": [
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "all_local_years_previously_researched": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "pristine_holdout": false,
+    "annual_resets": true,
+    "annual_ir_mean_is_not_continuous_period_ir": true,
+    "label": "raw_open(t+2)/raw_open(t+1)-1",
+    "accounting": "adjusted_return",
+    "ir_definition": "(portfolio_CAGR-benchmark_CAGR)/(sample_std(daily_active_return)*sqrt(252))",
+    "fee_assumptions": {
+      "commission_each_side": 0.0003,
+      "sell_stamp_tax": 0.001,
+      "minimum_commission": 0.0,
+      "transfer_fee": 0.0,
+      "additional_slippage_each_side_for_slip_scene": 0.0005,
+      "not_current_legal_rates_or_hidden_platform_claim": true
+    },
+    "scenario_definitions": {
+      "cost_barra": "long-only fully-invested exposure-constrained linear optimization plus fixed fees",
+      "zero_top_k": "Top50 with zero fees",
+      "cost_top_k": "Top50 plus fixed fees",
+      "slip_barra": "same exposure constraints andfees plus5bp eachside slippage"
+    },
+    "annual_results": [
+      {
+        "year": 2018,
+        "model": "v10",
+        "split_status": "chronological_fold_prediction_on_reused_development_period",
+        "mean_rankic": 0.0928381765972734,
+        "information_ratio_by_scene": {
+          "cost_barra": 3.098523395242374,
+          "zero_top_k": 4.081566754705606,
+          "cost_top_k": 1.831802276497439,
+          "slip_barra": 0.5390335552065659
+        }
+      },
+      {
+        "year": 2019,
+        "model": "v10",
+        "split_status": "chronological_fold_prediction_on_reused_development_period",
+        "mean_rankic": 0.08106884280532616,
+        "information_ratio_by_scene": {
+          "cost_barra": 4.412780582715616,
+          "zero_top_k": 6.652775902905556,
+          "cost_top_k": 1.6048187638678197,
+          "slip_barra": -0.6314855569282551
+        }
+      },
+      {
+        "year": 2020,
+        "model": "v10",
+        "split_status": "chronological_fold_prediction_on_reused_development_period",
+        "mean_rankic": 0.07722693385452695,
+        "information_ratio_by_scene": {
+          "cost_barra": 0.6766304838568478,
+          "zero_top_k": 5.083888730558677,
+          "cost_top_k": 1.3121706136339395,
+          "slip_barra": -2.5633932100464536
+        }
+      },
+      {
+        "year": 2021,
+        "model": "v10",
+        "split_status": "chronological_fold_prediction_on_reused_development_period",
+        "mean_rankic": 0.06275276296123027,
+        "information_ratio_by_scene": {
+          "cost_barra": 0.5113540785109313,
+          "zero_top_k": 3.5048562302356254,
+          "cost_top_k": 1.2307499036443754,
+          "slip_barra": -1.6762725034121693
+        }
+      }
+    ],
+    "execution_st_policy": "Matched local explicit zero-ST limit-rate override;separate from inference ignoring ST;not claimed hidden-platform execution policy.",
+    "base_config": {
+      "initial_cash": 1000000,
+      "lookback_market_dates": 120,
+      "holding_period": 1,
+      "rebalance_interval": 1,
+      "trading_days_per_year": 252,
+      "risk_free_rate": 0.0
+    },
+    "barra_constraints": {
+      "single_name_weight_limit": 0.08,
+      "active_weight_limit": 0.01,
+      "industry_exposure_limit": 0.02,
+      "style_exposure_limit": 0.02,
+      "turnover_limit": null,
+      "no_quadratic_covariance_risk_term": true
+    }
+  },
+  "rejected_last_trial": {
+    "name": "offline_rank_leaf_refit_252",
+    "published_as_new_version": false,
+    "selected": false,
+    "confirmation_2022_started": false,
+    "inference_updates": false,
+    "training_window_market_dates": 252,
+    "inference_lookback_market_dates": 120,
+    "decay_rate": 0.9,
+    "annual_cost_barra_ir": [
+      {
+        "year": 2018,
+        "reference": 3.098523395242374,
+        "candidate": 2.962462214326772,
+        "delta": -0.13606118091560226
+      },
+      {
+        "year": 2019,
+        "reference": 4.412780582715616,
+        "candidate": 4.320042502648477,
+        "delta": -0.09273808006713935
+      },
+      {
+        "year": 2020,
+        "reference": 0.6766304838568478,
+        "candidate": 0.5809882681396596,
+        "delta": -0.09564221571718812
+      },
+      {
+        "year": 2021,
+        "reference": 0.5113540785109313,
+        "candidate": 0.3308370163798098,
+        "delta": -0.1805170621311215
+      }
+    ],
+    "positive_ir_years": 0,
+    "mean_candidate_rankic": 0.07826570312411162,
+    "mean_reference_rankic": 0.0784716790545892,
+    "mean_candidate_ir": 2.0485825003736795,
+    "mean_reference_ir": 2.1748221350814423,
+    "mean_ir_delta": -0.1262396347077628,
+    "frozen_gates": {
+      "eligible": true,
+      "mean_ic": false,
+      "every_year_ic": true,
+      "ir_wins": false,
+      "mean_ir_gain": false,
+      "worst_ir": true,
+      "zero_top50": true,
+      "cost_top50": true,
+      "slip_mean": false,
+      "slip_worst": true
+    },
+    "interpretation": "Implementation/deployment checks passed within audited scope,but performance gates failed;no v15release."
+  },
+  "research_caveats": [
+    "All2016-2022years extensively reused;chronological splits do not undo adaptive model selection.",
+    "Failed and invalidated experiments retained;post-observation gate changes disclosed.",
+    "Technical checks do not establish economic success or organizer final manual approval.",
+    "Final local artifact selection is not proof of last actual platform upload.",
+    "No private result is assigned to any individual package.",
+    "No future financial or leaderboard performance guarantee."
+  ],
+  "evidence_provenance": [
+    {
+      "description": "Archived fourteen-version integrity and public-feedback review",
+      "sha256": "e164601151a7ea8a08a8af20aaea5b52336913a8fc4a3981c10e54cd1bb87a02"
+    },
+    {
+      "description": "Final local-selection artifact manifest",
+      "sha256": "0c2c697af8429cf10d5d950f2c50851f4eba8d13aa704db3b30687fea636fbd0"
+    },
+    {
+      "description": "Frozen offline leaf-refit selection and matched reference metrics",
+      "sha256": "6d3fbd9812b71d983e7cd1071a249621510a728f88a99faa66a744afa02a079d"
+    }
+  ],
+  "external_reference": {
+    "url": "https://github.com/Star6azeR/CSI300-Challenge-2026/",
+    "use": "Post-competition publication structure reference only;not an attribution of its results or method to this project."
+  }
+}

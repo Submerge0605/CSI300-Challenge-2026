@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "model_version": "v10",
+  "published_date": "2026-10-20",
+  "original_submission_zip_sha256": "85e10d7462d027ff760c09a49ad26df460fcebcf836e97e271769287eb34a432",
+  "original_submission_zip_bytes": 5213247,
+  "files": [
+    {
+      "path": "submission/__init__.py",
+      "bytes": 41,
+      "sha256": "3506f86f744c3d3204e8da0fbc6d2485085bcc4a5be79778a6e9a2c7d7716c80"
+    },
+    {
+      "path": "submission/alpha_features.py",
+      "bytes": 3713,
+      "sha256": "140f358ac853d1b047b5f3b523562f28799b02bb81cd47f54b337f42754ddc92"
+    },
+    {
+      "path": "submission/base_features.py",
+      "bytes": 5906,
+      "sha256": "345485f04827aeafb92903d3b372c2abc5c1eb1e1e0033a9d0de80c3a3427b3a"
+    },
+    {
+      "path": "submission/base_train.py",
+      "bytes": 3778,
+      "sha256": "344345deb2b9c42577c440e13d2924510cd00b78f030987eedf41a1bb09ee3de"
+    },
+    {
+      "path": "submission/cleaning.py",
+      "bytes": 1806,
+      "sha256": "59e4783000382ccfa1b53f72ab29ad560d067279200d34bafb914fec27c04b4f"
+    },
+    {
+      "path": "submission/deployment_policy.json",
+      "bytes": 31,
+      "sha256": "a2715d0b47292d51d2bbe19b3aa7ad3b83be79031dcdeb16e6e5b3c08688a985"
+    },
+    {
+      "path": "submission/features.py",
+      "bytes": 728,
+      "sha256": "31771317ff4e4e8adef6d82bdea4a04fe6372e9d90223505cc13c373297b025e"
+    },
+    {
+      "path": "submission/inference.py",
+      "bytes": 2503,
+      "sha256": "7d86092a8fa9845cd41fff49239164811b550825fd40c8808f89acde903d6c07"
+    },
+    {
+      "path": "submission/kaggle_features.py",
+      "bytes": 5958,
+      "sha256": "6906904757f93f7fe4d85ddd5991d739ae0f6326b0879f650d3dc1afc5bdfd45"
+    },
+    {
+      "path": "submission/model/extra_42.txt",
+      "bytes": 2241190,
+      "sha256": "4db979e54753e0ae8294aaef5ef593963a5160fa989ae47b76bcaf2a7bf7e71e"
+    },
+    {
+      "path": "submission/model/extra_43.txt",
+      "bytes": 2241864,
+      "sha256": "c3078f6fb251453ad6c5978b20fcf03a9fe65f2adc79f7987236ba3c9d1ce11f"
+    },
+    {
+      "path": "submission/model/extra_44.txt",
+      "bytes": 2232722,
+      "sha256": "00f8fdbf8e172b7bf21077a0ca0070bab40e1ed850560bb16813aed202e2b11d"
+    },
+    {
+      "path": "submission/model/meta.json",
+      "bytes": 40458,
+      "sha256": "ae1b0ed50123e0dde3a6495cd7888f5edde5167af266875b5a7c34fcfc4d9ee4"
+    },
+    {
+      "path": "submission/model/utility_42.txt",
+      "bytes": 2227021,
+      "sha256": "a3e16015e1b27404d32b6d4c163d9eefa5f85d432deb9c418b8400f58fca4d73"
+    },
+    {
+      "path": "submission/model/utility_43.txt",
+      "bytes": 2237481,
+      "sha256": "53f347495ac91fd2f9ae48fb449dc47d936fbb647a22cafc3f91dcb373a2517e"
+    },
+    {
+      "path": "submission/model/utility_44.txt",
+      "bytes": 2237558,
+      "sha256": "a1a1d2a059794814bbe14f9e1494f783a9acd00a43aadb012ade459fa81aaeeb"
+    },
+    {
+      "path": "submission/postprocess.py",
+      "bytes": 1767,
+      "sha256": "e8f6c188f38b107cfa2f0a1e99bed55b4a8f944b1660d9350b4f0e7a0bf319de"
+    },
+    {
+      "path": "submission/requirements.txt",
+      "bytes": 73,
+      "sha256": "a82f01cdc4b4c0a1747bddbe9d4bf81e1831f71880e13649d69f4882aacfb282"
+    },
+    {
+      "path": "submission/train.py",
+      "bytes": 3056,
+      "sha256": "d04f0b321d2f2b8d8361cd3e3bff55dc8d784f258ef7370de808c82daf05298e"
+    }
+  ],
+  "packaging_changes": [
+    "Portable README replaces historical machine-specific README",
+    "Repository documentation, tests, scripts and license notices added"
+  ],
+  "computational_sources_and_weights_modified": false,
+  "models": 6,
+  "features_per_model": 229,
+  "rounds_per_model": 350,
+  "training_cutoff": 20221231,
+  "maximum_inference_market_dates": 120
+}

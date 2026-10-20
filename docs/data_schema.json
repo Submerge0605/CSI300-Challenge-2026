@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "format": "pandas.DataFrame contract; numeric missing values may be NaN",
+  "key_columns": [
+    "日期",
+    "代码"
+  ],
+  "key_types": {
+    "日期": "integer YYYYMMDD, same type in all input tables",
+    "代码": "nonempty string, consistent across tables"
+  },
+  "inference_tables": [
+    "MarketData",
+    "Factor33_winsor",
+    "Barra_factor"
+  ],
+  "training_tables": [
+    "MarketData",
+    "Factor33_winsor",
+    "Barra_factor",
+    "MarketDataRawOpen"
+  ],
+  "tables": {
+    "MarketData": {
+      "inference_required_columns": [
+        "日期",
+        "代码",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "amount"
+      ],
+      "training_required_columns": [
+        "日期",
+        "代码",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "amount",
+        "is_suspend"
+      ],
+      "ignored_optional_columns": [
+        "名称",
+        "is_st"
+      ]
+    },
+    "Factor33_winsor": {
+      "inference_required_columns": [
+        "日期",
+        "代码",
+        "turn",
+        "change_ratio",
+        "daily_return",
+        "momentum_5",
+        "reversal_5",
+        "volatility_5",
+        "sma_20",
+        "ema_20",
+        "macd_diff_12_26_9",
+        "macd_dea_12_26_9",
+        "macd_hist_12_26_9",
+        "rsi_12",
+        "kdj_k_9_3_3",
+        "kdj_d_9_3_3",
+        "bias_20",
+        "cci_14",
+        "atr_14",
+        "total_market_cap",
+        "float_market_cap",
+        "pe_ttm",
+        "pb",
+        "ps_ttm",
+        "roe_avg_ttm",
+        "roa_avg_ttm",
+        "gross_profit_rate_ttm",
+        "net_profit_rate_ttm",
+        "debt_to_asset_lf",
+        "current_ratio_lf",
+        "beta_000300SH_22",
+        "list_days",
+        "is_new"
+      ],
+      "training_required_columns": [
+        "日期",
+        "代码",
+        "turn",
+        "change_ratio",
+        "daily_return",
+        "momentum_5",
+        "reversal_5",
+        "volatility_5",
+        "sma_20",
+        "ema_20",
+        "macd_diff_12_26_9",
+        "macd_dea_12_26_9",
+        "macd_hist_12_26_9",
+        "rsi_12",
+        "kdj_k_9_3_3",
+        "kdj_d_9_3_3",
+        "bias_20",
+        "cci_14",
+        "atr_14",
+        "total_market_cap",
+        "float_market_cap",
+        "pe_ttm",
+        "pb",
+        "ps_ttm",
+        "roe_avg_ttm",
+        "roa_avg_ttm",
+        "gross_profit_rate_ttm",
+        "net_profit_rate_ttm",
+        "debt_to_asset_lf",
+        "current_ratio_lf",
+        "beta_000300SH_22",
+        "list_days",
+        "is_new"
+      ],
+      "ignored_optional_columns": [
+        "名称",
+        "is_suspend",
+        "is_st"
+      ]
+    },
+    "Barra_factor": {
+      "inference_required_columns": [
+        "日期",
+        "代码",
+        "市值",
+        "贝塔",
+        "动量",
+        "残差波动",
+        "非线性市值",
+        "账面市值比",
+        "流动性",
+        "盈利",
+        "成长",
+        "杠杆"
+      ],
+      "training_required_columns": [
+        "日期",
+        "代码",
+        "市值",
+        "贝塔",
+        "动量",
+        "残差波动",
+        "非线性市值",
+        "账面市值比",
+        "流动性",
+        "盈利",
+        "成长",
+        "杠杆"
+      ],
+      "ignored_optional_columns": [
+        "名称",
+        "is_st"
+      ]
+    },
+    "MarketDataRawOpen": {
+      "inference_required_columns": [],
+      "training_required_columns": [
+        "日期",
+        "代码",
+        "open"
+      ],
+      "ignored_optional_columns": []
+    }
+  },
+  "training_file_glob": "<data-root>/<table>/*/*/*.parquet",
+  "training_filename_stem": "YYYYMM",
+  "training_cutoff_range": [
+    20160101,
+    20221231
+  ],
+  "predict": {
+    "as_of_date": "YYYY-MM-DD string present in Barra_factor",
+    "max_market_dates": 120,
+    "calendar_source": "Barra_factor observed dates",
+    "peer_universe": "all observable peers at each historical date",
+    "output_columns": [
+      "date",
+      "code",
+      "score"
+    ],
+    "score": "finite average-percentile rank in (0,1]"
+  },
+  "feature_order": "submission/model/meta.json models[*].features",
+  "model_feature_count": 229
+}
